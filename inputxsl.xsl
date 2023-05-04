@@ -173,8 +173,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 	</tr>
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="CDF_IMPACTE/@centre_frais_impacte">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Centres de frais impactés / Impacted cost center</b></u></font></h2>
@@ -186,8 +186,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 	</xsl:for-each>
 	</tr>
 </table>
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PIECE_COMPO_IMPACTEE/@piece_impactee">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Pièces composées impactées / Composed parts impacted</b></u></font></h2>
@@ -200,8 +200,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 	</xsl:for-each>
 	</tr>
 </table>
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PIECE_SITE_ARRETEE/@piece_site">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Pièces site gérées à la quantité d'arrêt / Parts managed by abolish quantity</b></u></font></h2>
@@ -228,8 +228,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PERI_FONC_IMPACTE/@code_famille">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Périmètre Fonctionnel impacté / Impacted functional scope</b></u></font></h2>
@@ -245,8 +245,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PIECES_CREEES/SECTION/LIBELLE/@piece">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Pièces créées / Created parts</b></u></font></h2>
@@ -261,8 +261,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PIECES_MODIFIEES/SECTION/LIBELLE/@piece">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Pièces modifiées / Parts modified</b></u></font></h2>
@@ -277,8 +277,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PIECE_VARIATION_CADENCE/SECTION/SUPPRESSION/PIECE_SUPP/@num_piece">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Pièces supprimées / Abolish parts</b></u></font></h2>
@@ -293,8 +293,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PIECE_VARIATION_CADENCE/SECTION/*/PIECE_VDC/@num_piece">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Pièces en variation de cadence / Using variantion part</b></u></font></h2>
@@ -311,8 +311,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PIECE_VARIATION_CENTRE_FRAIS/SECTION/*/PIECE_VDC/@num_piece">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Pièces en variation de centre de frais / Cost center variation part</b></u></font></h2>
@@ -329,8 +329,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="PIECE_VARIATION_COMPO_FAB/SECTION/*/PIECE_COMPO/@num_piece">
 <h2><font face='Arial, Helvetica, sans-serif' size='3pt'><u><b>Pièces en variation de composition fabrication / Assembly structure variation part</b></u></font></h2>
@@ -347,8 +347,8 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 </table>
 
-<br/>
-<br/>
+</br>
+</br>
 </xsl:if>
 <xsl:if test="TEXTE">
 <hr style="page-break-after:always"/>
@@ -437,12 +437,12 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<xsl:if test="SECTION/LIBELLE/@*">
 					<tr>
 						<td width="50%">
-						<br/>
+						</br>
 						<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Départ: / Start:</b></font>
 						</td>
 						<xsl:if test="SECTION/LIBELLE/AVANT/@*">
 						<td width="50%">
-						<br/>
+						</br>
 							<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b></font>
 						</td>
 						</xsl:if>
@@ -455,7 +455,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<tr>
 						<td nowrap="" width="50%">
 							<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce Indice: / Part index:</b></font>
-							<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="@piece"/><xsl:value-of select="@indice"/> <xsl:if test="@item">[Item: <xsl:value-of select="@item"/>]</xsl:if> <xsl:if test="@designation_abrege">[Dés. abrégée:/ Abbreviated: <xsl:value-of select="@designation_abrege"/>]</xsl:if> <xsl:if test="@designation">[Désignation:/ Name: <xsl:value-of select="@designation"/>]</xsl:if> <xsl:if test="@unite_comptage">[Unité comptage:/ Counting unit: <xsl:value-of select="@unite_comptage"/>]</xsl:if><br/> <xsl:if test="@type_produit">[T. Prod.: / Prod. Typ.:<xsl:value-of select="@type_produit"/>]</xsl:if> <xsl:if test="@code_graphiqueur">[Appro.:/ Suppl.: <xsl:value-of select="@code_graphiqueur"/>]</xsl:if> <xsl:if test="@masse">[Masse: / Weight:<xsl:value-of select="@masse"/>]</xsl:if> <xsl:if test="@rse">[RSE:/ RSE: <xsl:value-of select="@rse"/>]</xsl:if> <xsl:if test="section_achat">[Section achat:/ Cost center:<xsl:value-of select="@section_achat"/>]</xsl:if><xsl:if test="@commentaire"><br/><b>Commentaire indice: / Indice comments:</b><xsl:value-of select="@commentaire"/></xsl:if></font>
+							<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="@piece"/><xsl:value-of select="@indice"/> <xsl:if test="@item">[Item: <xsl:value-of select="@item"/>]</xsl:if> <xsl:if test="@designation_abrege">[Dés. abrégée:/ Abbreviated: <xsl:value-of select="@designation_abrege"/>]</xsl:if> <xsl:if test="@designation">[Désignation:/ Name: <xsl:value-of select="@designation"/>]</xsl:if> <xsl:if test="@unite_comptage">[Unité comptage:/ Counting unit: <xsl:value-of select="@unite_comptage"/>]</xsl:if></br> <xsl:if test="@type_produit">[T. Prod.: / Prod. Typ.:<xsl:value-of select="@type_produit"/>]</xsl:if> <xsl:if test="@code_graphiqueur">[Appro.:/ Suppl.: <xsl:value-of select="@code_graphiqueur"/>]</xsl:if> <xsl:if test="@masse">[Masse: / Weight:<xsl:value-of select="@masse"/>]</xsl:if> <xsl:if test="@rse">[RSE:/ RSE: <xsl:value-of select="@rse"/>]</xsl:if> <xsl:if test="section_achat">[Section achat:/ Cost center:<xsl:value-of select="@section_achat"/>]</xsl:if><xsl:if test="@commentaire"></br><b>Commentaire indice: / Indice comments:</b><xsl:value-of select="@commentaire"/></xsl:if></font>
 						</td>
 						<xsl:if test="AVANT/@*">
 						<td nowrap="" width="50%">
@@ -466,17 +466,17 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<xsl:if test="CDF_ORDRE/@*">
 						<tr>
 							<td>
-								<br/>
+								</br>
 								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Parcours pièce site / Plant part route</b></font>
-								<br/>
+								</br>
 								<table border="0">
 									<xsl:for-each select="CDF_ORDRE">
 									<tr>
-										<td nowrap="" bgcolor='#E3E3E3'><font face='Arial, Helvetica, sans-serif' size='2pt'><b>Num Ordre: / Order Num:<br/>Centre de Frais: / Cost center:</b></font></td>
+										<td nowrap="" bgcolor='#E3E3E3'><font face='Arial, Helvetica, sans-serif' size='2pt'><b>Num Ordre: / Order Num:</br>Centre de Frais: / Cost center:</b></font></td>
 
 										<td>
 												<font face='Arial, Helvetica, sans-serif' size='1pt'>&#160;&#160;<xsl:value-of select="@num_ordre"/>&#160;&#160;
-												<br/>
+												</br>
 												&#160;&#160;<xsl:value-of select="@centre_frais"/>&#160;&#160;</font>
 										</td>
 
@@ -507,9 +507,9 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 					<tr>
 						<td  colspan="2">
-							<br/>
+							</br>
 							<hr SIZE="1" width="70%" color="#E3E3E3" />
-							<br/>
+							</br>
 						</td>
 					</tr>
 
@@ -522,7 +522,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 						<tr>
 							<td>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce Indice: / Part index:</b></font>
-								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="@piece"/><xsl:value-of select="@indice"/> <xsl:if test="@item">[Item: <xsl:value-of select="@item"/>]</xsl:if> <xsl:if test="@designation_abrege">[Dés. abrégée: / Abbreviated:<xsl:value-of select="@designation_abrege"/>]</xsl:if> <xsl:if test="@designation">[Désignation: / Part name:<xsl:value-of select="@designation"/>]</xsl:if> <xsl:if test="@unite_comptage">[Unité comptage: / Counting unit:<xsl:value-of select="@unite_comptage"/>]</xsl:if><br/> <xsl:if test="@type_produit">[T. Prod.:/ Prod. Typ.:<xsl:value-of select="@type_produit"/>]</xsl:if> <xsl:if test="@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="@code_graphiqueur"/>]</xsl:if> <xsl:if test="@masse">[Masse:/Weight:<xsl:value-of select="@masse"/>]</xsl:if> <xsl:if test="@rse">[RSE: / RSE:<xsl:value-of select="@rse"/>]</xsl:if> <xsl:if test="@section_achat">[Section achat: / Cost center:<xsl:value-of select="@section_achat"/>]</xsl:if><xsl:if test="TEXTE"><br/><br/><b>Commentaire GSP: / GSP comments:</b><font size='3pt'><pre><xsl:value-of select="TEXTE"/></pre></font></xsl:if></font>
+								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="@piece"/><xsl:value-of select="@indice"/> <xsl:if test="@item">[Item: <xsl:value-of select="@item"/>]</xsl:if> <xsl:if test="@designation_abrege">[Dés. abrégée: / Abbreviated:<xsl:value-of select="@designation_abrege"/>]</xsl:if> <xsl:if test="@designation">[Désignation: / Part name:<xsl:value-of select="@designation"/>]</xsl:if> <xsl:if test="@unite_comptage">[Unité comptage: / Counting unit:<xsl:value-of select="@unite_comptage"/>]</xsl:if></br> <xsl:if test="@type_produit">[T. Prod.:/ Prod. Typ.:<xsl:value-of select="@type_produit"/>]</xsl:if> <xsl:if test="@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="@code_graphiqueur"/>]</xsl:if> <xsl:if test="@masse">[Masse:/Weight:<xsl:value-of select="@masse"/>]</xsl:if> <xsl:if test="@rse">[RSE: / RSE:<xsl:value-of select="@rse"/>]</xsl:if> <xsl:if test="@section_achat">[Section achat: / Cost center:<xsl:value-of select="@section_achat"/>]</xsl:if><xsl:if test="TEXTE"></br></br><b>Commentaire GSP: / GSP comments:</b><font size='3pt'><pre><xsl:value-of select="TEXTE"/></pre></font></xsl:if></font>
 							</td>
 						</tr>
 
@@ -542,7 +542,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 						<tr>
 							<td>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièces associées: / Associated parts:</b></font>
-								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="@i_piece"/>&#160;<xsl:value-of select="@i_designation"/>&#160;<xsl:value-of select="@i_lien"/><br/></font>
+								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="@i_piece"/>&#160;<xsl:value-of select="@i_designation"/>&#160;<xsl:value-of select="@i_lien"/></br></font>
 							</td>
 						</tr>
 						</xsl:for-each>
@@ -560,17 +560,17 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<xsl:if test="CDF_ORDRE/@*">
 						<tr>
 							<td>
-								<br/>
+								</br>
 								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Parcours pièce site / Plant part route</b></font>
-								<br/>
+								</br>
 								<table border="0">
 									<xsl:for-each select="CDF_ORDRE">
 									<tr>
-										<td nowrap="" bgcolor='#E3E3E3'><font face='Arial, Helvetica, sans-serif' size='2pt'><b>Num Ordre: / Order Num:<br/>Centre de Frais: / Cost center:</b></font></td>
+										<td nowrap="" bgcolor='#E3E3E3'><font face='Arial, Helvetica, sans-serif' size='2pt'><b>Num Ordre: / Order Num:</br>Centre de Frais: / Cost center:</b></font></td>
 
 										<td>
 												<font face='Arial, Helvetica, sans-serif' size='1pt'>  <xsl:value-of select="@num_ordre"/>
-												<br/>
+												</br>
 												  <xsl:value-of select="@centre_frais"/></font>
 										</td>
 
@@ -588,7 +588,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 						<xsl:if test="@*">
 						<tr>
 							<td>
-								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Ensemble créé: / Created set:</b><br/></font>
+								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Ensemble créé: / Created set:</b></br></font>
 								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:if test="@piece_composee"><xsl:value-of select="@piece_composee"/></xsl:if> <xsl:if test="@num_alternative">[Alt. / Alt: <xsl:value-of select="@num_alternative"/>]</xsl:if> <xsl:if test="@num_ordre">[Num Ordre: / Order Num:<xsl:value-of select="@num_ordre"/>]</xsl:if> <xsl:if test="@num_sequence">[N°séquence: / Sequence N°:<xsl:value-of select="@num_sequence"/>]</xsl:if> <xsl:if test="@coefficient">[Coef.: / Quantity:<xsl:value-of select="@coefficient"/>]</xsl:if> <xsl:if test="@designation_abrege">[Dés. abrégée: / Abbreviated:<xsl:value-of select="@designation_abrege"/>]</xsl:if> <xsl:if test="@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="@code_graphiqueur"/>]</xsl:if> <xsl:if test="@aval_gpro">[Aval GPRO: / Downstream GPRO:<xsl:value-of select="@aval_gpro"/>]</xsl:if> <xsl:if test="@validite">[Validité: / Validity:<xsl:value-of select="@validite"/>]</xsl:if></font>
 							</td>
 						</tr>
@@ -598,9 +598,9 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 
 				<tr>
 					<td>
-						<br/>
+						</br>
 						<hr SIZE="1" width="70%" color='#E3E3E3'/>
-						<br/>
+						</br>
 					</td>
 				</tr>
 
@@ -613,7 +613,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 										<tr>
 											<xsl:if test="SECTION/DEPART">
 											<td width="50%">
-											<br/>
+											</br>
 												<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Départ: / Start:</b></font>
 											</td>
 											</xsl:if>
@@ -621,14 +621,14 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 											<xsl:choose>
 											<xsl:when test="SECTION/DEPART">
 											<td width="50%">
-											<br/>
+											</br>
 												<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b></font>
 											</td>
 											</xsl:when>
 											<xsl:otherwise>
 											<td width="50%">&#160;</td>
 											<td width="50%">
-											<br/>
+											</br>
 											<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b></font>
 											</td>
 											</xsl:otherwise>
@@ -642,7 +642,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 										<xsl:if test="DEPART">
 										<td width="50%">
 											<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-											<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="DEPART/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="DEPART/@unite_comptage"/>]<br/> [T. Prod.: / Prod. Typ.:<xsl:value-of select="DEPART/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="DEPART/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="DEPART/@rse"/>] [Section achat: / Cost center :<xsl:value-of select="DEPART/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="DEPART/@validite"/>]</font>
+											<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="DEPART/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="DEPART/@unite_comptage"/>]</br> [T. Prod.: / Prod. Typ.:<xsl:value-of select="DEPART/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="DEPART/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="DEPART/@rse"/>] [Section achat: / Cost center :<xsl:value-of select="DEPART/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="DEPART/@validite"/>]</font>
 										</td>
 										</xsl:if>
 										<xsl:if test="ARRET">
@@ -650,14 +650,14 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 										<xsl:when test="DEPART">
 										<td width="50%">
 											<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-											<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]<br/> [T. Prod.: / Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center :<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
+											<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]</br> [T. Prod.: / Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center :<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
 										</td>
 										</xsl:when>
 										<xsl:otherwise>
 										<td width="50%">&#160;</td>
 										<td width="50%">
 											<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-											<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]<br/> [T. Prod.: / Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center :<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
+											<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]</br> [T. Prod.: / Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center :<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
 										</td>
 										</xsl:otherwise>
 										</xsl:choose>
@@ -695,7 +695,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 									<tr>
 										<xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@*">
 										<td width="50%">
-										<br/>
+										</br>
 											<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation nomenclature: / BOM use:</b></font>
 										</td>
 										</xsl:if>
@@ -703,14 +703,14 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 										<xsl:choose>
 										<xsl:when test="DEPART">
 										<td width="50%">
-										<br/>
+										</br>
 											<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation nomenclature: / BOM use:</b></font>
 										</td>
 										</xsl:when>
 										<xsl:otherwise>
 										<td width="50%">&#160;</td>
 										<td width="50%">
-										<br/>
+										</br>
 											<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation nomenclature: / BOM use:</b></font>
 										</td>
 										</xsl:otherwise>
@@ -720,7 +720,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 									<tr valign="top">
 										<xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@*">
 										<td align="left" nowrap="" width="50%">
-													<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@variante">[Var.:/ Var: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.:/ Origin: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@solution">[SOL:/ SOL: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.:/ Origin: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG:/ PG N°: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine:/ Plant reserve:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@fam_Ppum">Fam Ppum: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@sol_ext"><br/></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@code_aval"><br/></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@code_assembe"><br/></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais"><br/></xsl:when></xsl:choose><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.:/ Ext Sol.: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV:/ C. FEV: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.: / Ass.C.: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.:/ C ctr.: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@ecart"><br/></xsl:when><xsl:otherwise><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@commentaire"><br/></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@ecart">[Ecart:/ Gap: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@commentaire"><b>Commentaire APN: / APN comments <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@commentaire"/></b></xsl:if></font>
+													<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@variante">[Var.:/ Var: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.:/ Origin: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@solution">[SOL:/ SOL: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.:/ Origin: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG:/ PG N°: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine:/ Plant reserve:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@fam_Ppum">Fam Ppum: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@sol_ext"></br></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@code_aval"></br></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@code_assembe"></br></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais"></br></xsl:when></xsl:choose><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.:/ Ext Sol.: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV:/ C. FEV: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.: / Ass.C.: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.:/ C ctr.: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@ecart"></br></xsl:when><xsl:otherwise><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@commentaire"></br></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@ecart">[Ecart:/ Gap: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@commentaire"><b>Commentaire APN: / APN comments <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@commentaire"/></b></xsl:if></font>
 										<xsl:if test="DEPART/MTC/@*">
 											<table border="0">
 											<xsl:for-each select="DEPART/MTC">
@@ -739,7 +739,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 										<xsl:choose>
 										<xsl:when test="DEPART">
 										<td align="left" nowrap="" width="50%">
-													<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@variante">[Var.:/ Var: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.:/ Origin: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@solution">[SOL:/ SOL: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.:/ Origin : <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG:/ PG N°: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine:/ Plant reserve: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum">Fam Ppum: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_aval"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"><br/></xsl:when></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.:/ Ext Sol: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV:/ C. FEV:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.:/ Ass. C.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.:/ C ctr.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@ecart"><br/></xsl:when><xsl:otherwise><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"><br/></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@ecart">[Ecart:/ Gap: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"><b>Application:/ Application: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"/></b></xsl:if></font>
+													<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@variante">[Var.:/ Var: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.:/ Origin: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@solution">[SOL:/ SOL: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.:/ Origin : <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG:/ PG N°: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine:/ Plant reserve: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum">Fam Ppum: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_aval"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"></br></xsl:when></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.:/ Ext Sol: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV:/ C. FEV:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.:/ Ass. C.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.:/ C ctr.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@ecart"></br></xsl:when><xsl:otherwise><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"></br></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@ecart">[Ecart:/ Gap: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"><b>Application:/ Application: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"/></b></xsl:if></font>
 											<xsl:if test="ARRET/MTC/@*">
 												<table border="0">
 												<xsl:for-each select="ARRET/MTC">
@@ -757,7 +757,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 										<xsl:otherwise>
 										<td align="left" nowrap="" width="50%">&#160;</td>
 										<td align="left" nowrap="" width="50%">
-												<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@variante">[Var.:/ Var.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.:/ Origin: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@solution">[SOL:/ SOL: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.:/ Origin: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG:/ PG N°: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine:/ Plant reserve: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum">Fam Ppum: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_aval"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"><br/></xsl:when></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.:/ Ext Sol: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV:/ C. FEV: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.:/ Ass. C.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.:/ C ctr.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@ecart"><br/></xsl:when><xsl:otherwise><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"><br/></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@ecart">[Ecart:/ Gap: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"><b>Application:/ Application: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"/></b></xsl:if></font>
+												<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@variante">[Var.:/ Var.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.:/ Origin: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@solution">[SOL:/ SOL: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.:/ Origin: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG:/ PG N°: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine:/ Plant reserve: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum">Fam Ppum: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_aval"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"></br></xsl:when></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.:/ Ext Sol: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV:/ C. FEV: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.:/ Ass. C.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.:/ C ctr.: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@ecart"></br></xsl:when><xsl:otherwise><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"></br></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@ecart">[Ecart:/ Gap: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"><b>Application:/ Application: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@arret_strict"/></b></xsl:if></font>
 										<xsl:if test="ARRET/MTC/@*">
 											<table border="0">
 											<xsl:for-each select="ARRET/MTC">
@@ -798,7 +798,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 									<tr>
 									<td width="50%">&#160;</td>
 									<td width="50%">
-									<br/>
+									</br>
 										<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Suppression: / Abolition:</b></font>
 									</td>
 									</tr>
@@ -810,7 +810,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 									<td width="50%">&#160;</td>
 									<td width="50%">
 										<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-										<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="@designation_abrege"/>] [Unité comptage:/Counting unit:<xsl:value-of select="@unite_comptage"/>]<br/> [T. Prod.: / Prod. Typ.:<xsl:value-of select="@type_produit"/>] [Appro.: /Suppl.:<xsl:value-of select="@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="@rse"/>] [Section achat:/ Cost center:<xsl:value-of select="@section_achat"/>] [Validité: / Validity:<xsl:value-of select="@validite"/>]</font>
+										<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="@designation_abrege"/>] [Unité comptage:/Counting unit:<xsl:value-of select="@unite_comptage"/>]</br> [T. Prod.: / Prod. Typ.:<xsl:value-of select="@type_produit"/>] [Appro.: /Suppl.:<xsl:value-of select="@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="@rse"/>] [Section achat:/ Cost center:<xsl:value-of select="@section_achat"/>] [Validité: / Validity:<xsl:value-of select="@validite"/>]</font>
 									</td>
 									</tr>
 									<xsl:if test="@suivi">
@@ -826,7 +826,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 									<tr>
 									<td width="50%">&#160;</td>
 									<td width="50%">
-									<br/>
+									</br>
 										<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation nomenclature: / BOM use:</b></font>
 									</td>
 									</tr>
@@ -836,7 +836,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 									<tr valign="top">
 									<td width="50%" align="left">&#160;</td>
 									<td align="left" nowrap="" width="50%">
-													<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="UTILISATION_NOMENCLATURE/@variante">[Var.:/ Var: <xsl:value-of select="UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@origine_variante">[Ori.:/ Origin: <xsl:value-of select="UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@solution">[SOL:/ SOL: <xsl:value-of select="UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@origine_solution">[Ori.:/ Origin: <xsl:value-of select="UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@piece_generique">[N°PG:/ PG N°: <xsl:value-of select="UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine:/ Plant reserve: <xsl:value-of select="UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="UTILISATION_NOMENCLATURE/@fam_Ppum">Fam Ppum: <xsl:value-of select="UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@coefficient">[Coef.:/ Quantity:<xsl:value-of select="UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="UTILISATION_NOMENCLATURE/@sol_ext"><br/></xsl:when><xsl:when test="UTILISATION_NOMENCLATURE/@code_aval"><br/></xsl:when><xsl:when test="UTILISATION_NOMENCLATURE/@code_assembe"><br/></xsl:when><xsl:when test="UTILISATION_NOMENCLATURE/@centre_de_frais"><br/></xsl:when></xsl:choose><xsl:if test="UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.:/ Ext Sol: <xsl:value-of select="UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@code_aval">[C. FEV:/ C. FEV: <xsl:value-of select="UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.:/ Ass. C.: <xsl:value-of select="UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.:/ C. ctr.: <xsl:value-of select="UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="UTILISATION_NOMENCLATURE/@ecart"><br/></xsl:when><xsl:otherwise><xsl:if test="UTILISATION_NOMENCLATURE/@arret_strict"><br/></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="UTILISATION_NOMENCLATURE/@ecart">[Ecart:/ Gap: <xsl:value-of select="UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="UTILISATION_NOMENCLATURE/@arret_strict"><b>Application:/ Application:<xsl:value-of select="UTILISATION_NOMENCLATURE/@arret_strict"/></b></xsl:if></font>
+													<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="UTILISATION_NOMENCLATURE/@variante">[Var.:/ Var: <xsl:value-of select="UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@origine_variante">[Ori.:/ Origin: <xsl:value-of select="UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@solution">[SOL:/ SOL: <xsl:value-of select="UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@origine_solution">[Ori.:/ Origin: <xsl:value-of select="UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@piece_generique">[N°PG:/ PG N°: <xsl:value-of select="UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine:/ Plant reserve: <xsl:value-of select="UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="UTILISATION_NOMENCLATURE/@fam_Ppum">Fam Ppum: <xsl:value-of select="UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@coefficient">[Coef.:/ Quantity:<xsl:value-of select="UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="UTILISATION_NOMENCLATURE/@sol_ext"></br></xsl:when><xsl:when test="UTILISATION_NOMENCLATURE/@code_aval"></br></xsl:when><xsl:when test="UTILISATION_NOMENCLATURE/@code_assembe"></br></xsl:when><xsl:when test="UTILISATION_NOMENCLATURE/@centre_de_frais"></br></xsl:when></xsl:choose><xsl:if test="UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.:/ Ext Sol: <xsl:value-of select="UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@code_aval">[C. FEV:/ C. FEV: <xsl:value-of select="UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.:/ Ass. C.: <xsl:value-of select="UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.:/ C. ctr.: <xsl:value-of select="UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="UTILISATION_NOMENCLATURE/@ecart"></br></xsl:when><xsl:otherwise><xsl:if test="UTILISATION_NOMENCLATURE/@arret_strict"></br></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="UTILISATION_NOMENCLATURE/@ecart">[Ecart:/ Gap: <xsl:value-of select="UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="UTILISATION_NOMENCLATURE/@arret_strict"><b>Application:/ Application:<xsl:value-of select="UTILISATION_NOMENCLATURE/@arret_strict"/></b></xsl:if></font>
 										<xsl:if test="MTC/@*">
 											<table border="0">
 											<xsl:for-each select="MTC">
@@ -867,7 +867,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<tr>
 						<xsl:if test="SECTION/DEPART">
 						<td width="50%">
-						<br/>
+						</br>
 							<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Départ: / Start:</b></font>
 						</td>
 						</xsl:if>
@@ -875,14 +875,14 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 						<xsl:choose>
 						<xsl:when test="SECTION/DEPART">
 						<td width="50%">
-						<br/>
+						</br>
 							<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b></font>
 						</td>
 						</xsl:when>
 						<xsl:otherwise>
 						<td width="50%">&#160;</td>
 						<td width="50%">
-						<br/>
+						</br>
 						<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b></font>
 						</td>
 						</xsl:otherwise>
@@ -896,7 +896,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<xsl:if test="DEPART">
 					<td width="50%">
 						<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-						<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="DEPART/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="DEPART/@unite_comptage"/>]<br/> [T. Prod.: /Prod. Typ.:<xsl:value-of select="DEPART/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="DEPART/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="DEPART/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="DEPART/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="DEPART/@validite"/>]</font>
+						<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="DEPART/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="DEPART/@unite_comptage"/>]</br> [T. Prod.: /Prod. Typ.:<xsl:value-of select="DEPART/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="DEPART/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="DEPART/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="DEPART/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="DEPART/@validite"/>]</font>
 					</td>
 					</xsl:if>
 					<xsl:if test="ARRET">
@@ -904,14 +904,14 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<xsl:when test="DEPART">
 					<td width="50%">
 						<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-						<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]<br/> [T. Prod.: /Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
+						<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]</br> [T. Prod.: /Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
 					</td>
 					</xsl:when>
 					<xsl:otherwise>
 					<td width="50%">&#160;</td>
 					<td width="50%">
 						<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-						<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]<br/> [T. Prod.: /Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
+						<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]</br> [T. Prod.: /Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
 					</td>
 					</xsl:otherwise>
 					</xsl:choose>
@@ -949,7 +949,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 				<tr>
 					<xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@*">
 					<td width="50%">
-					<br/>
+					</br>
 						<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation nomenclature: / BOM use:</b></font>
 					</td>
 					</xsl:if>
@@ -957,14 +957,14 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<xsl:choose>
 					<xsl:when test="DEPART">
 					<td width="50%">
-					<br/>
+					</br>
 						<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation nomenclature: / BOM use:</b></font>
 					</td>
 					</xsl:when>
 					<xsl:otherwise>
 					<td width="50%">&#160;</td>
 					<td width="50%">
-					<br/>
+					</br>
 						<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation nomenclature: / BOM use:</b></font>
 					</td>
 					</xsl:otherwise>
@@ -974,11 +974,11 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 				<tr valign="top">
 					<xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@*">
 					<td align="left" nowrap="" width="50%">
-								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@variante">[Var.: / Var.:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.: / Origin:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@solution">[SOL: / SOL:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.: / Origin:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG: /PG N°:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine: / Plant reserve:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@fam_Ppum">/ Fam Ppum: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@sol_ext"><br/></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@code_aval"><br/></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@code_assembe"><br/></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais"><br/></xsl:when></xsl:choose><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.: / Ext. Sol.:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV: / C. FEV:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.: / Ass.C.:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.: / C ctr.:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@ecart"><br/></xsl:when><xsl:otherwise><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@commentaire"><br/></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@ecart">[Ecart: / Gap:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@commentaire"><b>Commentaire APN: / APN comments:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@commentaire"/></b></xsl:if></font>
+								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@variante">[Var.: / Var.:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.: / Origin:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@solution">[SOL: / SOL:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.: / Origin:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG: /PG N°:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine: / Plant reserve:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@fam_Ppum">/ Fam Ppum: <xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@sol_ext"></br></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@code_aval"></br></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@code_assembe"></br></xsl:when><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais"></br></xsl:when></xsl:choose><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.: / Ext. Sol.:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV: / C. FEV:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.: / Ass.C.:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.: / C ctr.:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="DEPART/UTILISATION_NOMENCLATURE/@ecart"></br></xsl:when><xsl:otherwise><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@commentaire"></br></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@ecart">[Ecart: / Gap:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_NOMENCLATURE/@commentaire"><b>Commentaire APN: / APN comments:<xsl:value-of select="DEPART/UTILISATION_NOMENCLATURE/@commentaire"/></b></xsl:if></font>
 					<xsl:if test="DEPART/MTC/@*">
 						<xsl:for-each select="DEPART/MTC">
 							<xsl:if test="@*">
-								<br/>
+								</br>
 								<font face='Arial, Helvetica, sans-serif' size='1pt'>&#160;- <xsl:value-of select="@millesime_deb"/> <xsl:value-of select="@millesime_fin"/> <xsl:value-of select="@mtceps"/></font>
 							</xsl:if>
 						</xsl:for-each>
@@ -989,11 +989,11 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<xsl:choose>
 					<xsl:when test="DEPART">
 					<td align="left" nowrap="" width="50%">
-								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@variante">[Var.: / Var.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.: / Origin:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@solution">[SOL: / SOL:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.: / Origin:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG: /PG N°:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine: / Plant reserve:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum">/ Fam Ppum: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_aval"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"><br/></xsl:when></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.: / Ext. Sol.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV: / C. FEV:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.: / Ass.C.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.: / C ctr.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@ecart"><br/></xsl:when><xsl:otherwise><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@commentaire"><br/></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@ecart">[Ecart: / Gap:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@commentaire"><b>Commentaire APN: / APN comments:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@commentaire"/></b></xsl:if></font>
+								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@variante">[Var.: / Var.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.: / Origin:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@solution">[SOL: / SOL:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.: / Origin:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG: /PG N°:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine: / Plant reserve:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum">/ Fam Ppum: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_aval"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"></br></xsl:when></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.: / Ext. Sol.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV: / C. FEV:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.: / Ass.C.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.: / C ctr.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@ecart"></br></xsl:when><xsl:otherwise><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@commentaire"></br></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@ecart">[Ecart: / Gap:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@commentaire"><b>Commentaire APN: / APN comments:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@commentaire"/></b></xsl:if></font>
 						<xsl:if test="ARRET/MTC/@*">
 							<xsl:for-each select="ARRET/MTC">
 								<xsl:if test="@*">
-								<br/>
+								</br>
 									<font face='Arial, Helvetica, sans-serif' size='1pt'>&#160;- <xsl:value-of select="@millesime_deb"/> <xsl:value-of select="@millesime_fin"/> <xsl:value-of select="@mtceps"/></font>
 								</xsl:if>
 							</xsl:for-each>
@@ -1003,11 +1003,11 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 					<xsl:otherwise>
 					<td align="left" width="50%">&#160;</td>
 					<td align="left" nowrap="" width="50%">
-							<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@variante">[Var.: / Var.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.: / Origin:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@solution">[SOL: / SOL:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.: / Origin:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG: /PG N°:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine: / Plant reserve:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum">/ Fam Ppum: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_aval"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"><br/></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"><br/></xsl:when></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.: / Ext. Sol.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV: / C. FEV:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.: / Ass.C.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.: / C ctr.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@ecart"><br/></xsl:when><xsl:otherwise><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@commentaire"><br/></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@ecart">[Ecart: / Gap:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@commentaire"><b>Commentaire APN: / APN comments:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@commentaire"/></b></xsl:if></font>
+							<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@famille"/> <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fonction_famille"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@variante">[Var.: / Var.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_variante">[Ori.: / Origin:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_variante"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@solution">[SOL: / SOL:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@origine_solution">[Ori.: / Origin:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@origine_solution"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@piece_generique">[N°PG: /PG N°:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@piece_generique"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine">[Réservé usine: / Plant reserve:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@reserve_usine"/> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum">/ Fam Ppum: <xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@fam_Ppum"/></xsl:if>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@coefficient"/>]</xsl:if><xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_aval"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"></br></xsl:when><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"></br></xsl:when></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@sol_ext">[Sol ext.: / Ext. Sol.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@sol_ext"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_aval">[C. FEV: / C. FEV:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_aval"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@code_assembe">[C. ass.: / Ass.C.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@code_assembe"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais">[CdF.: / C ctr.:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@centre_de_frais"/>]</xsl:if> <xsl:choose><xsl:when test="ARRET/UTILISATION_NOMENCLATURE/@ecart"></br></xsl:when><xsl:otherwise><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@commentaire"></br></xsl:if></xsl:otherwise></xsl:choose><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@ecart">[Ecart: / Gap:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@ecart"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_NOMENCLATURE/@commentaire"><b>Commentaire APN: / APN comments:<xsl:value-of select="ARRET/UTILISATION_NOMENCLATURE/@commentaire"/></b></xsl:if></font>
 					<xsl:if test="ARRET/MTC/@*">
 						<xsl:for-each select="ARRET/MTC">
 							<xsl:if test="@*">
-							<br/>
+							</br>
 								<font face='Arial, Helvetica, sans-serif' size='1pt'>&#160;- <xsl:value-of select="@millesime_deb"/> <xsl:value-of select="@millesime_fin"/> <xsl:value-of select="@mtceps"/></font>
 							</xsl:if>
 						</xsl:for-each>
@@ -1042,30 +1042,30 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 						<tr>
 							<xsl:if test="DEPART/@*">
 							<td width="50%">
-							<br/>
+							</br>
 
-								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Départ: / Start:</b><br/></font>
+								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Départ: / Start:</b></br></font>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="DEPART/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="DEPART/@unite_comptage"/>]<br/> [T. Prod.: / Prod. Typ.:<xsl:value-of select="DEPART/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="DEPART/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="DEPART/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="DEPART/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="DEPART/@validite"/>]</font>
+								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="DEPART/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="DEPART/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="DEPART/@unite_comptage"/>]</br> [T. Prod.: / Prod. Typ.:<xsl:value-of select="DEPART/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="DEPART/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="DEPART/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="DEPART/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="DEPART/@validite"/>]</font>
 							</td>
 							</xsl:if>
 							<xsl:if test="ARRET/@*">
 							<xsl:choose>
 							<xsl:when test="DEPART/@*">
 							<td width="50%">
-							<br/>
-								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b><br/></font>
+							</br>
+								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b></br></font>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]<br/> [T. Prod.: / Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
+								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]</br> [T. Prod.: / Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
 							</td>
 							</xsl:when>
 							<xsl:otherwise>
 							<td width="50%">&#160;</td>
 							<td width="50%">
-							<br/>
-								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b><br/></font>
+							</br>
+								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Arrêt: / Abolition:</b></br></font>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]<br/> [T. Prod.: / Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
+								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="ARRET/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="ARRET/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="ARRET/@unite_comptage"/>]</br> [T. Prod.: / Prod. Typ.:<xsl:value-of select="ARRET/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="ARRET/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="ARRET/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="ARRET/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="ARRET/@validite"/>]</font>
 							</td>
 							</xsl:otherwise>
 
@@ -1075,10 +1075,10 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 							<xsl:if test="SUPPRESSION">
 							<td width="50%">&#160;</td>
 							<td width="50%">
-							<br/>
-								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Suppression: / Abolition:</b><br/></font>
+							</br>
+								<font face='Arial, Helvetica, sans-serif' size='3pt'><b>Suppression: / Abolition:</b></br></font>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Pièce: / Part:</b></font>
-								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="SUPPRESSION/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="SUPPRESSION/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="SUPPRESSION/@unite_comptage"/>]<br/> [T. Prod.: / Prod. Typ.:<xsl:value-of select="SUPPRESSION/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="SUPPRESSION/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="SUPPRESSION/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="SUPPRESSION/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="SUPPRESSION/@validite"/>]</font>
+								<font face='Arial, Helvetica, sans-serif' size='1pt'><xsl:value-of select="SUPPRESSION/@piece"/> [Dés. abrégée: / Abbreviated:<xsl:value-of select="SUPPRESSION/@designation_abrege"/>] [Unité comptage: / Counting unit:<xsl:value-of select="SUPPRESSION/@unite_comptage"/>]</br> [T. Prod.: / Prod. Typ.:<xsl:value-of select="SUPPRESSION/@type_produit"/>] [Appro.: / Suppl.:<xsl:value-of select="SUPPRESSION/@code_graphiqueur"/>] [RSE: / RSE:<xsl:value-of select="SUPPRESSION/@rse"/>] [Section achat: / Cost center:<xsl:value-of select="SUPPRESSION/@section_achat"/>] [Validité: / Validity:<xsl:value-of select="SUPPRESSION/@validite"/>]</font>
 							</td>
 							</xsl:if>
 						</tr>
@@ -1088,7 +1088,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 							<xsl:if test="DEPART/@*">
 							<xsl:if test="DEPART/UTILISATION_ASSEMBLE/@*">
 							<td width="50%">
-							<br/>
+							</br>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation assemble: / Assembly use:</b></font>
 							</td>
 							</xsl:if>
@@ -1098,14 +1098,14 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 							<xsl:choose>
 							<xsl:when test="DEPART">
 							<td width="50%">
-							<br/>
+							</br>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation assemble: / Assembly use:</b></font>
 							</td>
 							</xsl:when>
 							<xsl:otherwise>
 							<td width="50%">&#160;</td>
 							<td width="50%">
-							<br/>
+							</br>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation assemble: / Assembly use:</b></font>
 							</td>
 							</xsl:otherwise>
@@ -1115,7 +1115,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 							<xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@*">
 							<td width="50%">&#160;</td>
 							<td width="50%">
-							<br/>
+							</br>
 								<font face='Arial, Helvetica, sans-serif' size='2pt'><b>Utilisation assemble: / Assembly use:</b></font>
 							</td>
 							</xsl:if>
@@ -1123,20 +1123,20 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 						<tr valign="top">
 							<xsl:if test="DEPART/UTILISATION_ASSEMBLE/@*">
 							<td width="50%">
-										<font face='Arial, Helvetica, sans-serif' size='1pt'><font STYLE="background-color: #E3E3E3"><xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@piece"/></font><xsl:if test="DEPART/UTILISATION_ASSEMBLE/@alternative">[Alt: /Alt:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@alternative"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@num_ordre">[N.Ordre: / Order N°<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@num_ordre"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@num_sequence">[N.Sequence: / Sequence N.:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@num_sequence"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@coefficient"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@designation_abrege">[Des.abregee: / Abbreviated:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@designation_abrege"/>]</xsl:if><br/> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@aval_gpro">[Code aval GPRO: / Downstream GPRO code:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@aval_gpro"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_ASSEMBLE/@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@code_graphiqueur"/>]</xsl:if><br/><br/></font>
+										<font face='Arial, Helvetica, sans-serif' size='1pt'><font STYLE="background-color: #E3E3E3"><xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@piece"/></font><xsl:if test="DEPART/UTILISATION_ASSEMBLE/@alternative">[Alt: /Alt:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@alternative"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@num_ordre">[N.Ordre: / Order N°<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@num_ordre"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@num_sequence">[N.Sequence: / Sequence N.:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@num_sequence"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@coefficient"/>]</xsl:if> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@designation_abrege">[Des.abregee: / Abbreviated:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@designation_abrege"/>]</xsl:if></br> <xsl:if test="DEPART/UTILISATION_ASSEMBLE/@aval_gpro">[Code aval GPRO: / Downstream GPRO code:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@aval_gpro"/>]</xsl:if><xsl:if test="DEPART/UTILISATION_ASSEMBLE/@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="DEPART/UTILISATION_ASSEMBLE/@code_graphiqueur"/>]</xsl:if></br></br></font>
 							</td>
 							</xsl:if>
 							<xsl:if test="ARRET/UTILISATION_ASSEMBLE/@*">
 							<xsl:choose>
 							<xsl:when test="DEPART">
 							<td width="50%">
-										<font face='Arial, Helvetica, sans-serif' size='1pt'><font STYLE="background-color: #E3E3E3"><xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@piece"/></font><xsl:if test="ARRET/UTILISATION_ASSEMBLE/@alternative">[Alt: /Alt:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@alternative"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@num_ordre">[N.Ordre: / Order N°<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@num_ordre"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@num_sequence">[N.Sequence: / Sequence N.:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@num_sequence"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@coefficient"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@designation_abrege">[Des.abregee: / Abbreviated:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@designation_abrege"/>]</xsl:if><br/> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@aval_gpro">[Code aval GPRO: / Downstream GPRO code:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@aval_gpro"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_ASSEMBLE/@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@code_graphiqueur"/>]</xsl:if><br/><br/></font>
+										<font face='Arial, Helvetica, sans-serif' size='1pt'><font STYLE="background-color: #E3E3E3"><xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@piece"/></font><xsl:if test="ARRET/UTILISATION_ASSEMBLE/@alternative">[Alt: /Alt:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@alternative"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@num_ordre">[N.Ordre: / Order N°<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@num_ordre"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@num_sequence">[N.Sequence: / Sequence N.:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@num_sequence"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@coefficient"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@designation_abrege">[Des.abregee: / Abbreviated:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@designation_abrege"/>]</xsl:if></br> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@aval_gpro">[Code aval GPRO: / Downstream GPRO code:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@aval_gpro"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_ASSEMBLE/@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@code_graphiqueur"/>]</xsl:if></br></br></font>
 							</td>
 							</xsl:when>
 							<xsl:otherwise>
 							<td width="50%">&#160;</td>
 							<td width="50%">
-										<font face='Arial, Helvetica, sans-serif' size='1pt'><font STYLE="background-color: #E3E3E3"><xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@piece"/></font><xsl:if test="ARRET/UTILISATION_ASSEMBLE/@alternative">[Alt: /Alt:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@alternative"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@num_ordre">[N.Ordre: / Order N°<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@num_ordre"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@num_sequence">[N.Sequence: / Sequence N.:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@num_sequence"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@coefficient"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@designation_abrege">[Des.abregee: / Abbreviated:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@designation_abrege"/>]</xsl:if><br/> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@aval_gpro">[Code aval GPRO: / Downstream GPRO code:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@aval_gpro"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_ASSEMBLE/@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@code_graphiqueur"/>]</xsl:if><br/><br/></font>
+										<font face='Arial, Helvetica, sans-serif' size='1pt'><font STYLE="background-color: #E3E3E3"><xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@piece"/></font><xsl:if test="ARRET/UTILISATION_ASSEMBLE/@alternative">[Alt: /Alt:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@alternative"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@num_ordre">[N.Ordre: / Order N°<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@num_ordre"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@num_sequence">[N.Sequence: / Sequence N.:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@num_sequence"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@coefficient"/>]</xsl:if> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@designation_abrege">[Des.abregee: / Abbreviated:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@designation_abrege"/>]</xsl:if></br> <xsl:if test="ARRET/UTILISATION_ASSEMBLE/@aval_gpro">[Code aval GPRO: / Downstream GPRO code:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@aval_gpro"/>]</xsl:if><xsl:if test="ARRET/UTILISATION_ASSEMBLE/@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="ARRET/UTILISATION_ASSEMBLE/@code_graphiqueur"/>]</xsl:if></br></br></font>
 							</td>
 							</xsl:otherwise>
 							</xsl:choose>
@@ -1144,7 +1144,7 @@ Lot n° <xsl:value-of select="LOT/@numero_lot"/> à <xsl:value-of select="LOT/@sit
 							<xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@*">
 							<td width="50%">&#160;</td>
 							<td width="50%">
-											<font face='Arial, Helvetica, sans-serif' size='1pt'><font STYLE="background-color: #E3E3E3"><xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@piece"/></font><xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@alternative">[Alt: /Alt:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@alternative"/>]</xsl:if> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@num_ordre">[N.Ordre: / Order N°<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@num_ordre"/>]</xsl:if> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@num_sequence">[N.Sequence: / Sequence N.:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@num_sequence"/>]</xsl:if> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@coefficient"/>]</xsl:if> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@designation_abrege">[Des.abregee: / Abbreviated:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@designation_abrege"/>]</xsl:if><br/> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@aval_gpro">[Code aval GPRO: / Downstream GPRO code:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@aval_gpro"/>]</xsl:if><xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@code_graphiqueur"/>]</xsl:if></font>
+											<font face='Arial, Helvetica, sans-serif' size='1pt'><font STYLE="background-color: #E3E3E3"><xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@piece"/></font><xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@alternative">[Alt: /Alt:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@alternative"/>]</xsl:if> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@num_ordre">[N.Ordre: / Order N°<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@num_ordre"/>]</xsl:if> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@num_sequence">[N.Sequence: / Sequence N.:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@num_sequence"/>]</xsl:if> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@coefficient">[Coef.: / Quantity:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@coefficient"/>]</xsl:if> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@designation_abrege">[Des.abregee: / Abbreviated:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@designation_abrege"/>]</xsl:if></br> <xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@aval_gpro">[Code aval GPRO: / Downstream GPRO code:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@aval_gpro"/>]</xsl:if><xsl:if test="SUPPRESSION/UTILISATION_ASSEMBLE/@code_graphiqueur">[Appro.: / Suppl.:<xsl:value-of select="SUPPRESSION/UTILISATION_ASSEMBLE/@code_graphiqueur"/>]</xsl:if></font>
 							</td>
 							</xsl:if>
 						</tr>
